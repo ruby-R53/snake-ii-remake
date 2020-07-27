@@ -1,0 +1,2 @@
+C:\Users\enkif\source\repos\game\Debug\game.exe
+C:\Users\enkif\source\repos\game\Debug\game.pdb
