@@ -1,6 +1,0 @@
-﻿  game.cpp
-C:\Users\enkif\source\repos\game\game.cpp(11,17): warning C4838: a conversão de 'int' em 'SHORT' requer uma conversão de restrição
-C:\Users\enkif\source\repos\game\game.cpp(11,20): warning C4838: a conversão de 'int' em 'SHORT' requer uma conversão de restrição
-C:\Users\enkif\source\repos\game\game.cpp(277,15): warning C4244: 'argumento': conversão de 'time_t' para 'unsigned int', possível perda de dados
-C:\Users\enkif\source\repos\game\game.cpp(61,6): warning C4102: 'title': rótulo não referenciado
-  game.vcxproj -> C:\Users\enkif\source\repos\game\Debug\game.exe
