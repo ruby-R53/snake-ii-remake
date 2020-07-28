@@ -505,12 +505,12 @@ title:
 #endif
     cout << "000_______________________ " << endl;
     cout << "###########################" << endl;
-    cout << "# ----------------------- #" << endl;
     cout << "#                         #" << endl;
     cout << "#     +------------+      #" << endl;
     cout << "#     |  SNAKE II: |      #" << endl;
     cout << "#     | THE REMAKE |      #" << endl;
     cout << "#     +------------+      #" << endl;
+    cout << "#                         #" << endl;
     cout << "# A.K.A: Jogo da Cobrinha #" << endl;
     cout << "# ----------------------- #" << endl;
     cout << "#                         #" << endl;
@@ -697,12 +697,6 @@ game:
 #else 
     system("clear");
 #endif
-    //Modifiquei as paredes, a cobra e também o sprite da maçã,
-    //que é um "ó", pois é parecido com uma maçã e seu cabo
-    //Houve um problema com os caracteres ASCII, ao definir a língua
-    //como Portuguesa, os quadrados (que eram as paredes e a cobra),
-    //foram modificados pelo caractere Û.
-    //Então eu usei "#" como substituto.
     cout << "0" << size[c] << "_______________________" << endl;
     cout << "###########################" << endl;
     cout << "#                         #" << endl;
@@ -777,7 +771,7 @@ game:
             cout << "#                         #" << endl;
             cout << "#          ______         #" << endl;
             cout << "#  Senha: |" << size[c] << "    |        #" << endl;
-            cout << "#         |" << speed << "   |       #" << endl;
+            cout << "#         |" << speed << "   |        #" << endl;
             cout << "#         --------        #" << endl;
             cout << "# ----------------------- #" << endl;
             cout << "#                      z  #" << endl;
