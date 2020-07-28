@@ -1,232 +1,211 @@
-﻿#include <windows.h>                                                     
+#include <windows.h>                                                     
 #include <stdio.h>
 #include <conio.h>
 #include <ctime>
 #include <iostream>
 #include <locale.h>
 #include <cstdlib>
+#include <string>
 using namespace std;
-void mgotoxy(int x, int y)
-{
+void mgotoxy(int x, int y) {
     COORD p = { x, y };
     SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), p);
 }
-int main()
-{
-    system("mode 29,20");
+int main() {
+    system("mode 27,20");
     system("title Snake");
     system("color 20");
     setlocale(LC_ALL, "Portuguese");
-    cout << " 000_______________________ " << endl;
-    cout << " ###########################" << endl;
-    cout << " # ----------------------- #" << endl;
-    cout << " #   <<<-----|-|----->>>   #" << endl;
-    cout << " #    <<<----|-|---->>>    #" << endl;
-    cout << " #     <<<---|-|--->>>     #" << endl;
-    cout << " # ----------------------- #" << endl;
-    cout << " # <<<<<<<[INFINITY]>>>>>> #" << endl;
-    cout << " # ----------------------- #" << endl;
-    cout << " #       apresenta:        #" << endl;
-    cout << " #                         #" << endl;
-    cout << " #                         #" << endl;
-    cout << " #                         #" << endl;
-    cout << " #                         #" << endl;
-    cout << " #                         #" << endl;
-    cout << " #                         #" << endl;
-    cout << " #                         #" << endl;
-    cout << " #                         #" << endl;
-    cout << " ###########################" << endl;
+    cout << "000_______________________ " << endl;
+    cout << "###########################" << endl;
+    cout << "# ----------------------- #" << endl;
+    cout << "#   <<<-----|-|----->>>   #" << endl;
+    cout << "#    <<<----|-|---->>>    #" << endl;
+    cout << "#     <<<---|-|--->>>     #" << endl;
+    cout << "# ----------------------- #" << endl;
+    cout << "# <<<<<<<[INFINITY]>>>>>> #" << endl;
+    cout << "# ----------------------- #" << endl;
+    cout << "#       apresenta:        #" << endl;
+    cout << "#                         #" << endl;
+    cout << "#                         #" << endl;
+    cout << "#                         #" << endl;
+    cout << "#                         #" << endl;
+    cout << "#                         #" << endl;
+    cout << "#                         #" << endl;
+    cout << "#                         #" << endl;
+    cout << "#                         #" << endl;
+    cout << "###########################" << endl;
     Sleep(1000);
     system("cls");
-    cout << " 000_______________________ " << endl;
-    cout << " ###########################" << endl;
-    cout << " # ----------------------- #" << endl;
-    cout << " #   <<<-----|-|----->>>   #" << endl;
-    cout << " #    <<<----|-|---->>>    #" << endl;
-    cout << " #     <<<---|-|--->>>     #" << endl;
-    cout << " # ----------------------- #" << endl;
-    cout << " # <<<<<<<[INFINITY]>>>>>> #" << endl;
-    cout << " # ----------------------- #" << endl;
-    cout << " #       apresenta:        #" << endl;
-    cout << " #  um jogo clássico, que  #" << endl;
-    cout << " # agora possui um REMAKE! #" << endl;
-    cout << " #         É ELE:          #" << endl;
-    cout << " #                         #" << endl;
-    cout << " #                         #" << endl;
-    cout << " #                         #" << endl;
-    cout << " #                         #" << endl;
-    cout << " #                         #" << endl;
-    cout << " ###########################" << endl;
+    cout << "000_______________________ " << endl;
+    cout << "###########################" << endl;
+    cout << "# ----------------------- #" << endl;
+    cout << "#   <<<-----|-|----->>>   #" << endl;
+    cout << "#    <<<----|-|---->>>    #" << endl;
+    cout << "#     <<<---|-|--->>>     #" << endl;
+    cout << "# ----------------------- #" << endl;
+    cout << "# <<<<<<<[INFINITY]>>>>>> #" << endl;
+    cout << "# ----------------------- #" << endl;
+    cout << "#       apresenta:        #" << endl;
+    cout << "#  um jogo clássico, que  #" << endl;
+    cout << "# agora possui um REMAKE! #" << endl;
+    cout << "#         É ELE:          #" << endl;
+    cout << "#                         #" << endl;
+    cout << "#                         #" << endl;
+    cout << "#                         #" << endl;
+    cout << "#                         #" << endl;
+    cout << "#                         #" << endl;
+    cout << "###########################" << endl;
     Sleep(5000);
+    goto title;
 title:
     system("cls");
-    Sleep(5);
-    cout << " 000_______________________ " << endl;
-    Sleep(5);
-    cout << " ###########################" << endl;
-    Sleep(5);
-    cout << " # ----------------------- #" << endl;
-    Sleep(5);
-    cout << " #                         #" << endl;
-    Sleep(5);
-    cout << " #      +----------+       #" << endl;
-    Sleep(5);
-    cout << " #      | SNAKE II:|       #" << endl;
-    Sleep(5);
-    cout << " #      |THE REMAKE|       #" << endl;
-    Sleep(5);
-    cout << " #      +----------+       #" << endl;
-    Sleep(5);
-    cout << " # A.K.A: Jogo da Cobrinha #" << endl;
-    Sleep(5);
-    cout << " # ----------------------- #" << endl;
-    Sleep(5);
-    cout << " #                         #" << endl;
-    Sleep(5);
-    cout << " #                         #" << endl;
-    Sleep(5);
-    cout << " #             ####<-snake #" << endl;
-    Sleep(5);
-    cout << " #             #           #" << endl;
-    Sleep(5);
-    cout << " #  ############           #" << endl;
-    Sleep(5);
-    cout << " # ----------------------- #" << endl;
-    Sleep(5);
-    cout << " #   > Pressione Enter <   #" << endl;
-    Sleep(5);
-    cout << " #    Versão: 1.1 BETA     #" << endl;
-    Sleep(5);
-    cout << " ###########################" << endl;
+    cout << "000_______________________ " << endl;
+    cout << "###########################" << endl;
+    cout << "# ----------------------- #" << endl;
+    cout << "#                         #" << endl;
+    cout << "#     +------------+      #" << endl;
+    cout << "#     |  SNAKE II: |      #" << endl;
+    cout << "#     | THE REMAKE |      #" << endl;
+    cout << "#     +------------+      #" << endl;
+    cout << "# A.K.A: Jogo da Cobrinha #" << endl;
+    cout << "# ----------------------- #" << endl;
+    cout << "#                         #" << endl;
+    cout << "#                         #" << endl;
+    cout << "#             ####<-snake #" << endl;
+    cout << "#             #           #" << endl;
+    cout << "#  ############           #" << endl;
+    cout << "# ----------------------- #" << endl;
+    cout << "#  -> Pressione Enter <-  #" << endl;
+    cout << "#       Versão: 1.1       #" << endl;
+    cout << "###########################" << endl;
 #pragma warning (disable : 4996)
     getch();
     goto option;
 option:
     int op;
     int password = 1;
-    int speed;
+    int speed = 200;
     int c = 0;
     system("cls");
-    cout << " 000_______________________ " << endl;
-    cout << " ###########################" << endl;
-    cout << " # ----------------------- #" << endl;
-    cout << " #      o p t i o n s      #" << endl;
-    cout << " # ----------------------- #" << endl;
-    cout << " #  Escolha uma opção:     #" << endl;
-    cout << " # 0: Sair                 #" << endl;
-    cout << " # 1: Continuar            #" << endl;
-    cout << " # 2: Novo Jogo            #" << endl;
-    cout << " # 3: Ajuda                #" << endl;
-    cout << " # ----------------------- #" << endl;
-    cout << " #                         #" << endl;
-    cout << " #  __0__    __1__   __2__ #" << endl;
-    cout << " # |_____|  |_____| |_____|#" << endl;
-    cout << " #             #           #" << endl;
-    cout << " #  __3__      #           #" << endl;
-    cout << " # |_____|     #           #" << endl;
-    cout << " # ----------------------- #" << endl;
-    cout << " ###########################" << endl;
-    cout << " ";
+    cout << "000_______________________ " << endl;
+    cout << "###########################" << endl;
+    cout << "# ----------------------- #" << endl;
+    cout << "#      o p t i o n s      #" << endl;
+    cout << "# ----------------------- #" << endl;
+    cout << "#    Escolha uma opção:   #" << endl;
+    cout << "# 0: Sair                 #" << endl;
+    cout << "# 1: Continuar            #" << endl;
+    cout << "# 2: Novo Jogo            #" << endl;
+    cout << "# 3: Ajuda                #" << endl;
+    cout << "# ----------------------- #" << endl;
+    cout << "# ------- options: ------ #" << endl;
+    cout << "#  _0_   _1_   _2_   _3_  #" << endl;
+    cout << "# |___| |___| |___| |___| #" << endl;
+    cout << "#            #            #" << endl;
+    cout << "#            #            #" << endl;
+    cout << "#            #            #" << endl;
+    cout << "# ----------------------- #" << endl;
+    cout << "###########################" << endl;
     cin >> op;
-    if (op == 0) 
-        return 0;
-    if (op == 1)
+    if (op == 0) {
+       return 0;
+    }
+    if (op == 1) {
         c = 1;
         system("cls");
-        cout << " 000_______________________ " << endl;
-        cout << " ###########################" << endl;
-        cout << " # ----------------------- #" << endl;
-        cout << " #     p a s s w o r d     #" << endl;
-        cout << " # ----------------------- #" << endl;
-        cout << " #   Digite a sua senha    #" << endl;
-        cout << " #         abaixo:         #" << endl;
-        cout << " # ----------------------- #" << endl;
-        cout << " #                         #" << endl;
-        cout << " #                         #" << endl;
-        cout << " #                         #" << endl;
-        cout << " #                         #" << endl;
-        cout << " #               ####      #" << endl;
-        cout << " #               #         #" << endl;
-        cout << " #    ############         #" << endl;
-        cout << " #                         #" << endl;
-        cout << " # ----------------------- #" << endl;
-        cout << " ###########################" << endl;
-        cout << " ";
+        cout << "000_______________________ " << endl;
+        cout << "###########################" << endl;
+        cout << "# ----------------------- #" << endl;
+        cout << "#     p a s s w o r d     #" << endl;
+        cout << "# ----------------------- #" << endl;
+        cout << "#   Digite a sua senha    #" << endl;
+        cout << "#         abaixo:         #" << endl;
+        cout << "# ----------------------- #" << endl;
+        cout << "#                         #" << endl;
+        cout << "#                         #" << endl;
+        cout << "#                         #" << endl;
+        cout << "#                         #" << endl;
+        cout << "#                         #" << endl;
+        cout << "#               ####      #" << endl;
+        cout << "#               #         #" << endl;
+        cout << "#    ############         #" << endl;
+        cout << "# ----------------------- #" << endl;
+        cout << "###########################" << endl;
         cin >> password;
-        cout << " ";
         cin >> speed;
-        int size[2] = { 1,password };
-        goto game;
-    if (op == 2)
+        goto size;
+    }
+    if (op == 2) {
     set:
         system("cls");
-        cout << " 000_______________________ " << endl;
-        cout << " ###########################" << endl;
-        cout << " # ----------------------- #" << endl;
-        cout << " #       s p e e d         #" << endl;
-        cout << " # ----------------------- #" << endl;
-        cout << " # Digite a velocidade de  #" << endl;
-        cout << " # seu personagem, que é   #" << endl;
-        cout << " # medida por milisegundos #" << endl;
-        cout << " # ----------------------- #" << endl;
-        cout << " #                         #" << endl;
-        cout << " #                         #" << endl;
-        cout << " #                         #" << endl;
-        cout << " #                         #" << endl;
-        cout << " #                         #" << endl;
-        cout << " #              ------#### #" << endl;
-        cout << " #             ------#     #" << endl;
-        cout << " # ------############      #" << endl;
-        cout << " # ----------------------- #" << endl;
-        cout << " ###########################" << endl;
-        cout << " ";
+        cout << "000_______________________ " << endl;
+        cout << "###########################" << endl;
+        cout << "# ----------------------- #" << endl;
+        cout << "#       s p e e d         #" << endl;
+        cout << "# ----------------------- #" << endl;
+        cout << "# Digite a velocidade de  #" << endl;
+        cout << "# seu personagem, que é   #" << endl;
+        cout << "# medida por milissegun-  #" << endl;
+        cout << "# dos.                    #" << endl;
+        cout << "# ----------------------- #" << endl;
+        cout << "#                         #" << endl;
+        cout << "#                         #" << endl;
+        cout << "#                         #" << endl;
+        cout << "#                         #" << endl;
+        cout << "#                         #" << endl;
+        cout << "#              ------#### #" << endl;
+        cout << "#             ------#     #" << endl;
+        cout << "# ------############      #" << endl;
+        cout << "# ----------------------- #" << endl;
+        cout << "###########################" << endl;
         cin >> speed;
-        goto game;
+        goto size;
+    }
     if (op == 3) {
     help:
         system("cls");
-        cout << " 000_______________________ " << endl;
-        cout << " ###########################" << endl;
-        cout << " # ----------------------- #" << endl;
-        cout << " #       p a g e  1        #" << endl;
-        cout << " # ----------------------- #" << endl;
-        cout << " # Primeiro, você precisa  #" << endl;
-        cout << " # ajustar a sua velocida- #" << endl;
-        cout << " # de. É usado um sistema  #" << endl;
-        cout << " # de milisegundos para    #" << endl;
-        cout << " # isso. Ao colocar certa  #" << endl;
-        cout << " # quantidade de milise-   #" << endl;
-        cout << " # gundos, a cobra se move #" << endl;
-        cout << " # um quadrado a cada mi-  #" << endl;
-        cout << " # lisegundo que foi ajus- #" << endl;
-        cout << " # tado pelo jogador.      #" << endl;
-        cout << " # ----------------------- #" << endl;
-        cout << " #                         #" << endl;
-        cout << " # próxima página: enter > #" << endl;
-        cout << " ###########################" << endl;
+        cout << "000_______________________ " << endl;
+        cout << "###########################" << endl;
+        cout << "# ----------------------- #" << endl;
+        cout << "#       p a g e  1        #" << endl;
+        cout << "# ----------------------- #" << endl;
+        cout << "# Primeiro, você precisa  #" << endl;
+        cout << "# ajustar a sua velocida- #" << endl;
+        cout << "# de. É usado um sistema  #" << endl;
+        cout << "# de milisegundos para    #" << endl;
+        cout << "# isso. Ao colocar certa  #" << endl;
+        cout << "# quantidade de milisse-  #" << endl;
+        cout << "# gundos, a cobra se move #" << endl;
+        cout << "# um quadrado a cada mi-  #" << endl;
+        cout << "# lisegundo que foi ajus- #" << endl;
+        cout << "# tado pelo jogador.      #" << endl;
+        cout << "# ----------------------- #" << endl;
+        cout << "# próxima página: enter > #" << endl;
+        cout << "# ----------------------- #" << endl;
+        cout << "###########################" << endl;
         getch();
         system("cls");
         int o = 0;
-        cout << " 000_______________________ " << endl;
-        cout << " ###########################" << endl;
-        cout << " # ----------------------- #" << endl;
-        cout << " #       p a g e  2        #" << endl;
-        cout << " # ----------------------- #" << endl;
-        cout << " # Os controles são os di- #" << endl;
-        cout << " # recionais de seu tecla- #" << endl;
-        cout << " # do. Para colher uma ma- #" << endl;
-        cout << " # çã, faça a cobra se en- #" << endl;
-        cout << " # contrar com ela, assim, #" << endl;
-        cout << " # cada maçã irá aumentar  #" << endl;
-        cout << " # uma unidade de seu ta-  #" << endl;
-        cout << " # manho.                  #" << endl;
-        cout << " # ----------------------- #" << endl;
-        cout << " #         Opções:         #" << endl;
-        cout << " # 0: Sair                 #" << endl;
-        cout << " # 1: Jogar                #" << endl;
-        cout << " # ----------------------- #" << endl;
-        cout << " ###########################" << endl;
-        cout << " ";
+        cout << "000_______________________ " << endl;
+        cout << "###########################" << endl;
+        cout << "# ----------------------- #" << endl;
+        cout << "#       p a g e  2        #" << endl;
+        cout << "# ----------------------- #" << endl;
+        cout << "# Os controles são os di- #" << endl;
+        cout << "# recionais de seu tecla- #" << endl;
+        cout << "# do. Para colher uma ma- #" << endl;
+        cout << "# çã, faça a cobra se en- #" << endl;
+        cout << "# contrar com ela, assim, #" << endl;
+        cout << "# cada maçã irá aumentar  #" << endl;
+        cout << "# uma unidade de seu ta-  #" << endl;
+        cout << "# manho.                  #" << endl;
+        cout << "# ----------------------- #" << endl;
+        cout << "#         Opções:         #" << endl;
+        cout << "# 0: Sair                 #" << endl;
+        cout << "# 1: Jogar                #" << endl;
+        cout << "# ----------------------- #" << endl;
+        cout << "###########################" << endl;
         cin >> o;
         if (o == 0) {
             return 0;
@@ -245,6 +224,9 @@ option:
         getch();
         goto option;
     }
+size:
+    int size[2] = { 1,password };
+    goto game;
 game:
     int x, d = 2, cx[300] = { 12,1 }, cy[300] = { 9,7 }, mx, my;
     char tecla = 'a';
@@ -255,28 +237,28 @@ game:
     //como Portuguesa, os quadrados (que eram as paredes e a cobra),
     //foram modificados pelo caractere Û.
     //Então eu usei "#" como substituto.
-    cout << " 0" << size[c] << "_______________________" << endl;
-    cout << " ###########################" << endl;
-    cout << " #                         #" << endl;
-    cout << " #                         #" << endl;
-    cout << " #                         #" << endl;
-    cout << " #                         #" << endl;
-    cout << " #                         #" << endl;
-    cout << " #                         #" << endl;
-    cout << " #                         #" << endl;
-    cout << " #                         #" << endl;
-    cout << " #                         #" << endl;
-    cout << " #                         #" << endl;
-    cout << " #                         #" << endl;
-    cout << " #                         #" << endl;
-    cout << " #                         #" << endl;
-    cout << " #                         #" << endl;
-    cout << " #                         #" << endl;
-    cout << " #                         #" << endl;
-    cout << " ###########################" << endl;
+    cout << "0" << size[c] << "_______________________" << endl;
+    cout << "###########################" << endl;
+    cout << "#                         #" << endl;
+    cout << "#                         #" << endl;
+    cout << "#                         #" << endl;
+    cout << "#                         #" << endl;
+    cout << "#                         #" << endl;
+    cout << "#                         #" << endl;
+    cout << "#                         #" << endl;
+    cout << "#                         #" << endl;
+    cout << "#                         #" << endl;
+    cout << "#                         #" << endl;
+    cout << "#                         #" << endl;
+    cout << "#                         #" << endl;
+    cout << "#                         #" << endl;
+    cout << "#                         #" << endl;
+    cout << "#                         #" << endl;
+    cout << "#                         #" << endl;
+    cout << "###########################" << endl;
     srand(time(0));
     mx = rand() % 3 + 3;
-    my = rand() % 15 + 3;
+    my = rand() % 15 + 2;
     while (tecla != 's')
     {
 #pragma warning (disable : 4996)
@@ -299,7 +281,7 @@ game:
                 my = rand() % 15 + 3;
             }
             mgotoxy(cx[0], cy[0]);
-            printf("%c", 35);
+            printf("#");
             mgotoxy(mx, my);
             printf("%c", 499);
             Sleep(speed);
@@ -307,7 +289,7 @@ game:
             {
                 if (cx[0] == cx[x] && cy[0] == cy[x])tecla = 's';
             }
-            if (cy[0] == 0 || cy[0] == 18 || cx[0] == 0 || cx[0] == 29)tecla = 's';
+            if (cy[0] == 0 || cy[0] == 18 || cx[0] == 0 || cx[0] == 26)tecla= 's';
         }
 #pragma warning (disable : 4996)
         if (tecla != 's')tecla = getch();
@@ -317,25 +299,25 @@ game:
         if (tecla == 'P')d = 3;
         if (tecla == 'p') {
             system("cls");
-            cout << " ###########################" << endl;
-            cout << " # ----------------------- #" << endl;
-            cout << " #        p a u s e        #" << endl;
-            cout << " # ----------------------- #" << endl;
-            cout << " #                         #" << endl;
-            cout << " #                         #" << endl;
-            cout << " #                         #" << endl;
-            cout << " #                         #" << endl;
-            cout << " #          ______         #" << endl;
-            cout << " #  Senha: |" << size[c] << "    |   #" << endl;
-            cout << " #         |" << speed << "   |    #" << endl;
-            cout << " #         --------        #" << endl;
-            cout << " # ----------------------- #" << endl;
-            cout << " #                      z  #" << endl;
-            cout << " #                     z   #" << endl;
-            cout << " #                    z    #" << endl;
-            cout << " #   #################     #" << endl;
-            cout << " # ----------------------- #" << endl;
-            cout << " ###########################" << endl;
+            cout << "###########################" << endl;
+            cout << "# ----------------------- #" << endl;
+            cout << "#        p a u s e        #" << endl;
+            cout << "# ----------------------- #" << endl;
+            cout << "#                         #" << endl;
+            cout << "#                         #" << endl;
+            cout << "#                         #" << endl;
+            cout << "#                         #" << endl;
+            cout << "#          ______         #" << endl;
+            cout << "#  Senha: |" << size[c] << "    |        #" << endl;
+            cout << "#         |" << speed << "   |       #" << endl;
+            cout << "#         --------        #" << endl;
+            cout << "# ----------------------- #" << endl;
+            cout << "#                      z  #" << endl;
+            cout << "#                     z   #" << endl;
+            cout << "#                    z    #" << endl;
+            cout << "#   #################     #" << endl;
+            cout << "# ----------------------- #" << endl;
+            cout << "###########################" << endl;
             getch();
             goto game;
         }
@@ -344,16 +326,25 @@ game:
 gameover:
     int option;
     system("cls");
-    cout << " #=======[Game Over!]======#" << endl;
-    cout << " #         __________      #" << endl;
-    cout << " # Senha: |" << size[c] << "        |     #" << endl;
-    cout << " #        |" << speed  << "       |     #" << endl;
-    cout << " #        ------------     #" << endl;
-    cout << " # Escolha uma opção:      #" << endl;
-    cout << " # 0: Sair                 #" << endl;
-    cout << " # 1: Continuar            #" << endl;
-    cout << " # 2: Novo Jogo            #" << endl;
-    cout << " ###########################" << endl;
+    cout << "###########################" << endl;
+    cout << "# ----------------------- #" << endl;
+    cout << "#    g a m e  o v e r     #" << endl;
+    cout << "# ----------------------- #" << endl;
+    cout << "#         __________      #" << endl;
+    cout << "# Senha: |" << size[c] << "        |     #" << endl;
+    cout << "#        |" << speed  << "       |     #" << endl;
+    cout << "#        ------------     #" << endl;
+    cout << "# ----------------------- #" << endl;
+    cout << "# Escolha uma opção:      #" << endl;
+    cout << "# 0: Sair                 #" << endl;
+    cout << "# 1: Continuar            #" << endl;
+    cout << "# 2: Novo Jogo            #" << endl;
+    cout << "# ----------------------- #" << endl;
+    cout << "#                         #" << endl;
+    cout << "#                         #" << endl;
+    cout << "#                         #" << endl;
+    cout << "#    ##############X#X    #" << endl;
+    cout << "###########################" << endl;
     cin >> option;
     if (option == 0) {
         return 0;
@@ -362,6 +353,7 @@ gameover:
         goto game;
     }
     if (option == 2) {
+        password = 1;
         goto set;
     }
     else {
