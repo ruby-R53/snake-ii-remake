@@ -21,7 +21,11 @@ int main() {
     system("title Snake");
     system("color 20");
     setlocale(LC_ALL, "Portuguese");
+#ifdef _WIN32
     system("cls");
+#else 
+    system("clear");
+#endif
     cout << "000_______________________ " << endl;
     cout << "###########################" << endl;
     cout << "# ----------------------- #" << endl;
@@ -42,7 +46,11 @@ int main() {
     cout << "#                         #" << endl;
     cout << "###########################" << endl;
     Sleep(500);
+#ifdef _WIN32
     system("cls");
+#else 
+    system("clear");
+#endif
     cout << "000_______________________ " << endl;
     cout << "###########################" << endl;
     cout << "# ----------------------- #" << endl;
@@ -63,6 +71,11 @@ int main() {
     cout << "#                         #" << endl;
     cout << "###########################" << endl;
     Sleep(500);
+#ifdef _WIN32
+    system("cls");
+#else 
+    system("clear");
+#endif
     cout << "000_______________________ " << endl;
     cout << "###########################" << endl;
     cout << "# ----------------------- #" << endl;
@@ -83,7 +96,11 @@ int main() {
     cout << "#                         #" << endl;
     cout << "###########################" << endl;
     Sleep(600);
+#ifdef _WIN32
     system("cls");
+#else 
+    system("clear");
+#endif
     cout << "000_______________________ " << endl;
     cout << "###########################" << endl;
     cout << "# ----------------------- #" << endl;
@@ -104,7 +121,11 @@ int main() {
     cout << "# ----------------------- #" << endl;
     cout << "###########################" << endl;
     Sleep(300);
+#ifdef _WIN32
     system("cls");
+#else 
+    system("clear");
+#endif
     cout << "000_______________________ " << endl;
     cout << "###########################" << endl;
     cout << "# ----------------------- #" << endl;
@@ -125,7 +146,11 @@ int main() {
     cout << "# ----------------------- #" << endl;
     cout << "###########################" << endl;
     Sleep(300);
+#ifdef _WIN32
     system("cls");
+#else 
+    system("clear");
+#endif
     cout << "000_______________________ " << endl;
     cout << "###########################" << endl;
     cout << "# ----------------------- #" << endl;
@@ -146,7 +171,11 @@ int main() {
     cout << "# ----------------------- #" << endl;
     cout << "###########################" << endl;
     Sleep(300);
+#ifdef _WIN32
     system("cls");
+#else 
+    system("clear");
+#endif
     cout << "000_______________________ " << endl;
     cout << "###########################" << endl;
     cout << "# ----------------------- #" << endl;
@@ -167,7 +196,11 @@ int main() {
     cout << "# ----------------------- #" << endl;
     cout << "###########################" << endl;
     Sleep(300);
+#ifdef _WIN32
     system("cls");
+#else 
+    system("clear");
+#endif
     cout << "000_______________________ " << endl;
     cout << "###########################" << endl;
     cout << "# ----------------------- #" << endl;
@@ -188,7 +221,11 @@ int main() {
     cout << "# ----------------------- #" << endl;
     cout << "###########################" << endl;
     Sleep(300);
+#ifdef _WIN32
     system("cls");
+#else 
+    system("clear");
+#endif
     cout << "000_______________________ " << endl;
     cout << "###########################" << endl;
     cout << "# ----------------------- #" << endl;
@@ -209,7 +246,11 @@ int main() {
     cout << "# ----------------------- #" << endl;
     cout << "###########################" << endl;
     Sleep(300);
+#ifdef _WIN32
     system("cls");
+#else 
+    system("clear");
+#endif
     cout << "000_______________________ " << endl;
     cout << "###########################" << endl;
     cout << "# ----------------------- #" << endl;
@@ -230,7 +271,11 @@ int main() {
     cout << "# ----------------------- #" << endl;
     cout << "###########################" << endl;
     Sleep(300);
+#ifdef _WIN32
     system("cls");
+#else 
+    system("clear");
+#endif
     cout << "000_______________________ " << endl;
     cout << "###########################" << endl;
     cout << "# ----------------------- #" << endl;
@@ -251,7 +296,11 @@ int main() {
     cout << "# ----------------------- #" << endl;
     cout << "###########################" << endl;
     Sleep(300);
+#ifdef _WIN32
     system("cls");
+#else 
+    system("clear");
+#endif
     cout << "000_______________________ " << endl;
     cout << "###########################" << endl;
     cout << "# ----------------------- #" << endl;
@@ -272,7 +321,11 @@ int main() {
     cout << "# ----------------------- #" << endl;
     cout << "###########################" << endl;
     Sleep(300);
+#ifdef _WIN32
     system("cls");
+#else 
+    system("clear");
+#endif
     cout << "000_______________________ " << endl;
     cout << "###########################" << endl;
     cout << "# ----------------------- #" << endl;
@@ -293,7 +346,11 @@ int main() {
     cout << "# ----------------------- #" << endl;
     cout << "###########################" << endl;
     Sleep(300);
+#ifdef _WIN32
     system("cls");
+#else 
+    system("clear");
+#endif
     cout << "000_______________________ " << endl;
     cout << "###########################" << endl;
     cout << "# ----------------------- #" << endl;
@@ -314,7 +371,11 @@ int main() {
     cout << "# ----------------------- #" << endl;
     cout << "###########################" << endl;
     Sleep(300);
+#ifdef _WIN32
     system("cls");
+#else 
+    system("clear");
+#endif
     cout << "000_______________________ " << endl;
     cout << "###########################" << endl;
     cout << "# ----------------------- #" << endl;
@@ -335,7 +396,11 @@ int main() {
     cout << "# ----------------------- #" << endl;
     cout << "###########################" << endl;
     Sleep(300);
+#ifdef _WIN32
     system("cls");
+#else 
+    system("clear");
+#endif
     cout << "000_______________________ " << endl;
     cout << "###########################" << endl;
     cout << "# ----------------------- #" << endl;
@@ -356,7 +421,11 @@ int main() {
     cout << "# ----------------------- #" << endl;
     cout << "###########################" << endl;
     Sleep(300);
+#ifdef _WIN32
     system("cls");
+#else 
+    system("clear");
+#endif
     cout << "000_______________________ " << endl;
     cout << "###########################" << endl;
     cout << "# ----------------------- #" << endl;
@@ -377,7 +446,11 @@ int main() {
     cout << "# ----------------------- #" << endl;
     cout << "###########################" << endl;
     Sleep(300);
+#ifdef _WIN32
     system("cls");
+#else 
+    system("clear");
+#endif
     cout << "000_______________________ " << endl;
     cout << "###########################" << endl;
     cout << "# ----------------------- #" << endl;
@@ -398,7 +471,11 @@ int main() {
     cout << "# ----------------------- #" << endl;
     cout << "###########################" << endl;
     Sleep(300);
+#ifdef _WIN32
     system("cls");
+#else 
+    system("clear");
+#endif
     cout << "000_______________________ " << endl;
     cout << "###########################" << endl;
     cout << "# ----------------------- #" << endl;
@@ -421,7 +498,11 @@ int main() {
     Sleep(300);
     goto title;
 title:
+#ifdef _WIN32
     system("cls");
+#else 
+    system("clear");
+#endif
     cout << "000_______________________ " << endl;
     cout << "###########################" << endl;
     cout << "# ----------------------- #" << endl;
@@ -448,7 +529,11 @@ option:
     int password = 1;
     int speed = 200;
     int c = 0;
+#ifdef _WIN32
     system("cls");
+#else 
+    system("clear");
+#endif
     cout << "000_______________________ " << endl;
     cout << "###########################" << endl;
     cout << "# ----------------------- #" << endl;
@@ -474,7 +559,11 @@ option:
     }
     if (op == 1) {
         c = 1;
+#ifdef _WIN32
         system("cls");
+#else 
+        system("clear");
+#endif
         cout << "000_______________________ " << endl;
         cout << "###########################" << endl;
         cout << "# ----------------------- #" << endl;
@@ -499,7 +588,11 @@ option:
     }
     if (op == 2) {
     set:
+#ifdef _WIN32
         system("cls");
+#else 
+        system("clear");
+#endif
         cout << "000_______________________ " << endl;
         cout << "###########################" << endl;
         cout << "# ----------------------- #" << endl;
@@ -525,7 +618,11 @@ option:
     }
     if (op == 3) {
     help:
+#ifdef _WIN32
         system("cls");
+#else 
+        system("clear");
+#endif
         cout << "000_______________________ " << endl;
         cout << "###########################" << endl;
         cout << "# ----------------------- #" << endl;
@@ -546,7 +643,11 @@ option:
         cout << "# ----------------------- #" << endl;
         cout << "###########################" << endl;
         getch();
+#ifdef _WIN32
         system("cls");
+#else 
+        system("clear");
+#endif
         int o = 0;
         cout << "000_______________________ " << endl;
         cout << "###########################" << endl;
@@ -591,7 +692,11 @@ size:
 game:
     int x, d = 2, cx[300] = { 12,1 }, cy[300] = { 9,7 }, mx, my;
     char tecla = 'a';
+#ifdef _WIN32
     system("cls");
+#else 
+    system("clear");
+#endif
     //Modifiquei as paredes, a cobra e também o sprite da maçã,
     //que é um "ó", pois é parecido com uma maçã e seu cabo
     //Houve um problema com os caracteres ASCII, ao definir a língua
@@ -619,7 +724,7 @@ game:
     cout << "###########################" << endl;
     srand(time(0));
     mx = rand() % 1 + 25 - 1;
-    my = rand() % 15 + 2;
+    my = rand() % 16 + 2;
     while (tecla != 's')
     {
         while (tecla != 's' && !(tecla = kbhit()))
@@ -657,7 +762,11 @@ game:
         if (tecla == 'M') d = 2;
         if (tecla == 'P') d = 3;
         if (tecla == 'p') {
+#ifdef _WIN32
             system("cls");
+#else 
+            system("clear");
+#endif
             cout << "###########################" << endl;
             cout << "# ----------------------- #" << endl;
             cout << "#        p a u s e        #" << endl;
@@ -684,7 +793,11 @@ game:
     }
 gameover:
     int option;
+#ifdef _WIN32
     system("cls");
+#else 
+    system("clear");
+#endif
     cout << "###########################" << endl;
     cout << "# ----------------------- #" << endl;
     cout << "#    g a m e  o v e r     #" << endl;
