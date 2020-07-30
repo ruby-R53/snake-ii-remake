@@ -717,7 +717,7 @@ game:
     cout << "#                         #" << endl;
     cout << "###########################" << endl;
     srand(time(0));
-    mx = rand() % 1 + 25 - 1;
+    mx = rand() % 25 + 1;
     my = rand() % 16 + 2;
     while (tecla != 's')
     {
@@ -736,8 +736,8 @@ game:
             printf(" ");
             if (mx == cx[0] && my == cy[0]){
                 size[c]++;
-                mx = rand() % 3 + 3;
-                my = rand() % 15 + 3;
+                mx = rand() % 25 + 1;
+                my = rand() % 16 + 2;
             }
             mgotoxy(cx[0], cy[0]);
             printf("#");
