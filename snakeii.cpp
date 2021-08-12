@@ -1,4 +1,3 @@
-#pragma warning (disable : 4996)
 #ifdef _WIN64
 #include <windows.h>  
 #else
@@ -1080,7 +1079,7 @@ title:
     cout << " █ ------------------------------------------------------> Pressione Enter <------------------------------------------------------ █" << endl;
     cout << " █                                                          Versão: beta                                                           █" << endl;
     cout << " ███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████" << endl;
-    getch();
+    _getch();
     goto option;
 option:
     int op;
@@ -1297,7 +1296,7 @@ option:
             break;
         default:
             cout << "Comando inválido";
-            getch();
+            _getch();
             goto help;
         }
     }
@@ -1357,7 +1356,7 @@ game:
     my = rand() % 37 + 2;
     while (key != 's')
     {
-        while (key != 's' && !(key = kbhit()))
+        while (key != 's' && !(key = _kbhit()))
         {
             for (x = size[c]; x > 0; x--)
             {
@@ -1386,7 +1385,7 @@ game:
             }
             if (cy[0] == 1 || cy[0] == 39 || cx[0] == 1 || cx[0] == 131) key = 's';
         }
-        if (key != 's') key = getch();
+        if (key != 's') key = _getch();
         if (key == 'K') d = 0;
         if (key == 'H') d = 1;
         if (key == 'M') d = 2;
@@ -1437,7 +1436,7 @@ game:
             cout << " █                           ó                             █████████████████                                                       █" << endl;
             cout << " █ ------------------------------------------------------------------------------------------------------------------------------- █" << endl;
             cout << " ███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████" << endl;
-            getch();
+            _getch();
             goto game;
         }
         if (cy[0] == 1 || cy[0] == 39 || cx[0] == 1 || cx[0] == 131) key = 's';
@@ -1503,7 +1502,7 @@ gameover:
         break;
     default:
         cout << "Comando inválido";
-        getch();
+        _getch();
         goto gameover;
     }
 }
